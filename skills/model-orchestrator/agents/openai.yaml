@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orquestrador de Modelos"
+  short_description: "Coordena Codex e workers OpenCode com gates"
+  default_prompt: "Use $model-orchestrator para classificar, rotear, delegar e revisar esta tarefa com a arquitetura v3."

@@ -1,0 +1,16 @@
+{
+  "schema_version": 3,
+  "decision_status": "valid",
+  "route": "codex_only|external_worker",
+  "platform": "traycer",
+  "harness": "codex|opencode",
+  "provider": "openai|opencode|openrouter",
+  "surface": "codex_session|gui_chat|terminal_tui",
+  "agent_role": "router|free_worker|default|terminal_agent|critical",
+  "model": "configured-model-id",
+  "justification": "evidence-based reason",
+  "cost_limit_usd": 0,
+  "max_attempts": 1,
+  "fallback": "codex_only",
+  "independent_review_required": true
+}

@@ -1,0 +1,6 @@
+{"id":"small-fixture","description":"Criar fixture sintética local","data_classification":"synthetic","signals":[],"estimated_files":1,"estimated_commands":1,"estimated_test_iterations":1,"estimated_modules":1,"objective_validation":true}
+{"id":"endpoint","description":"Implementar endpoint delimitado com testes","data_classification":"sanitized","signals":["public_api"],"estimated_files":4,"estimated_commands":2,"estimated_test_iterations":1,"estimated_modules":1,"objective_validation":true}
+{"id":"agentic-failure","description":"Investigar teste quebrado navegando o repositório","data_classification":"sanitized","signals":["repository_navigation","tool_intensive","worktree"],"estimated_files":6,"estimated_commands":8,"estimated_test_iterations":3,"estimated_modules":2,"objective_validation":true}
+{"id":"auth-change","description":"Alterar autorização multi-tenant","data_classification":"internal","signals":["authorization","multi_tenancy"],"estimated_files":5,"estimated_commands":5,"estimated_test_iterations":2,"estimated_modules":3,"objective_validation":true}
+{"id":"real-process","description":"Analisar processo real","data_classification":"sensitive","signals":["process_deadlines","sensitive_data"],"estimated_files":2,"estimated_commands":1,"estimated_test_iterations":0,"estimated_modules":1,"objective_validation":false}
+

@@ -1,0 +1,3 @@
+{"task_id":"example-1","model_role":"default","objective_verdict":"accepted","first_pass_success":true,"tests_passed":true,"tool_call_success_rate":1.0,"invalid_tool_calls":0,"scope_violations":0,"unexpected_files":0,"input_tokens":0,"output_tokens":0,"total_cost":0.0,"elapsed_time":0,"number_of_attempts":1,"review_defects":0}
+{"task_id":"example-2","model_role":"terminal_agent","objective_verdict":"rejected","first_pass_success":false,"tests_passed":false,"tool_call_success_rate":0.9,"invalid_tool_calls":1,"scope_violations":0,"unexpected_files":0,"input_tokens":0,"output_tokens":0,"total_cost":0.0,"elapsed_time":0,"number_of_attempts":1,"review_defects":1}
+

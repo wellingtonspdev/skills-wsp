@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "source": "mock",
+  "traycer_version": "test",
+  "harnesses": {"codex":{"available":true},"opencode":{"available":true}},
+  "surfaces": {"gui_chat":{"available":true,"a2a":true},"terminal_tui":{"available":true,"a2a":false}},
+  "features": {"agent_create":true,"agent_transcript":true,"worktree_create":true}
+}

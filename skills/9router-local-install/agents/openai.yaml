@@ -1,0 +1,4 @@
+interface:
+  display_name: "9Router Local Seguro"
+  short_description: "Instalar 9Router local via Docker"
+  default_prompt: "Use $9router-local-install para instalar e validar o 9Router localmente em Docker."

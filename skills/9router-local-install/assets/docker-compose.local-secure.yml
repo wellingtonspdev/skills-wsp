@@ -1,0 +1,25 @@
+services:
+  9router:
+    image: decolua/9router:latest
+    container_name: 9router-local
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:20128:20128"
+    env_file:
+      - .env.docker
+    environment:
+      DATA_DIR: /app/data
+      PORT: "20128"
+      HOSTNAME: "0.0.0.0"
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+      ENABLE_REQUEST_LOGS: "false"
+      OBSERVABILITY_ENABLED: "false"
+      REQUIRE_API_KEY: "true"
+      AUTH_COOKIE_SECURE: "false"
+    volumes:
+      - "__RUNTIME_DATA_PATH__:/app/data"
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 256
+    mem_limit: 2g

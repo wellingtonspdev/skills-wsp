@@ -1,0 +1,15 @@
+{
+  "schema_version": 3,
+  "classification_status": "valid",
+  "complexity": "low|medium|high",
+  "risk": "low|medium|high|critical",
+  "sensitivity": "public|synthetic|sanitized|internal|sensitive|secret|unknown",
+  "scope_breadth": "local|multi_file|cross_module",
+  "reversibility": "high|medium|low",
+  "external_access_decision": "allowed|blocked_unknown_or_sensitive",
+  "codex_model_decision": "standard|sol",
+  "external_model_required": false,
+  "independent_review_required": true,
+  "opencode_allowed": false,
+  "openrouter_allowed": false
+}

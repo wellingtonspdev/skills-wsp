@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "source": "runtime_cli",
+  "traycer_version": "1.1.10",
+  "harnesses": {
+    "codex": {
+      "available": true
+    },
+    "opencode": {
+      "available": true
+    }
+  },
+  "surfaces": {
+    "gui_chat": {
+      "available": true,
+      "a2a": true
+    },
+    "terminal_tui": {
+      "available": true,
+      "a2a": false
+    }
+  },
+  "features": {
+    "agent_create": true,
+    "agent_transcript": true,
+    "worktree_create": true
+  },
+  "identity": {
+    "agent_env_supported": true,
+    "epic_env_supported": true
+  },
+  "evidence": [
+    {
+      "args": [
+        "--version"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "--help"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "agent",
+        "--help"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "agent",
+        "list-harnesses",
+        "--no-progress"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "agent",
+        "list-harness-models",
+        "opencode",
+        "--no-progress"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "agent",
+        "create",
+        "--help"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "agent",
+        "transcript",
+        "--help"
+      ],
+      "returncode": 0
+    },
+    {
+      "args": [
+        "worktree",
+        "create",
+        "--help"
+      ],
+      "returncode": 0
+    }
+  ]
+}

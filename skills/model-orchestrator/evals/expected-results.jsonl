@@ -1,0 +1,6 @@
+{"id":"small-fixture","risk":"low","model_role":"free_worker"}
+{"id":"endpoint","risk":"medium","model_role":"default"}
+{"id":"agentic-failure","risk":"medium","model_role":"terminal_agent"}
+{"id":"auth-change","risk":"high","model_role":"critical"}
+{"id":"real-process","risk":"high","model_role":"critical"}
+

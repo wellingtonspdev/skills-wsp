@@ -1,0 +1,112 @@
+{
+    "schema_version":  3,
+    "active":  false,
+    "skill_name":  "model-orchestrator",
+    "skill_root":  "TO_RESOLVE_AT_RUNTIME",
+    "orchestration":  {
+                          "platform":  "traycer",
+                          "adapter_type":  "traycer_cli",
+                          "adapter_command":  "traycer",
+                          "executable_path":  "TO_CONFIRM_TRAYCER_EXECUTABLE",
+                          "use_worktrees":  true,
+                          "require_artifact_handoffs":  true,
+                          "auto_merge":  false,
+                          "require_preflight":  true,
+                          "require_route_artifact":  true,
+                          "require_classification_artifact":  true,
+                          "coordinator_harness":  "codex",
+                          "external_worker_harness":  "opencode",
+                          "provider_is_not_harness":  true
+                      },
+    "codex":  {
+                  "router_model":  "gpt-5.6-luna",
+                  "intermediate_model":  "gpt-5.6-terra",
+                  "critical_model":  "gpt-5.6-sol",
+                  "model_ids_status":  "TO_CONFIRM_IN_INSTALLED_CODEX"
+              },
+    "opencode":  {
+                     "command":  "opencode",
+                     "free_worker_label":  "MiMo-V2.5 Free",
+                     "free_worker_slug":  "opencode/mimo-v2.5-free",
+                     "model_slug_status":  "TO_CONFIRM_WITH_PROVIDER",
+                     "max_attempts":  1,
+                     "surfaces":  [
+                                      "gui_chat",
+                                      "terminal_tui"
+                                  ],
+                     "tui_a2a_policy":  "blocked"
+                 },
+    "openrouter":  {
+                       "api_base":  "https://openrouter.ai/api/v1",
+                       "api_key_env":  "OPENROUTER_API_KEY",
+                       "budget_usd":  9.40,
+                       "reserve_usd":  2.00,
+                       "pricing_source":  "TO_CONFIRM_FROM_RUNTIME_CATALOG",
+                       "pricing_source_type":  "opencode_catalog_verbose",
+                       "paid_workers":  {
+                                            "default":  {
+                                                            "label":  "DeepSeek V4 Flash 0731",
+                                                            "slug":  "openrouter/deepseek/deepseek-v4-flash-0731",
+                                                            "max_attempts":  2
+                                                        },
+                                            "terminal_agent":  {
+                                                                   "label":  "Laguna S 2.1",
+                                                                   "slug":  "openrouter/poolside/laguna-s-2.1",
+                                                                   "max_attempts":  2
+                                                               }
+                                        },
+                       "allowed_labels":  [
+                                              "DeepSeek V4 Flash 0731",
+                                              "Laguna S 2.1"
+                                          ],
+                       "block_unapproved_paid_models":  true
+                   },
+    "routing":  {
+                    "prefer_free_when_safe":  true,
+                    "trajectory_check_enabled":  true,
+                    "terminal_score_threshold":  3,
+                    "multi_file_threshold":  5,
+                    "repeated_failure_limit":  2,
+                    "fallback_route":  "codex_only"
+                },
+    "privacy":  {
+                    "allowed_external_data":  [
+                                                  "public",
+                                                  "synthetic",
+                                                  "sanitized"
+                                              ],
+                    "allow_internal_external":  false,
+                    "blocked_path_patterns":  [
+                                                  ".env",
+                                                  "*.pem",
+                                                  "*.key",
+                                                  "*.pfx",
+                                                  "*credentials*",
+                                                  "*secrets*",
+                                                  "production-logs/**"
+                                              ],
+                    "require_sanitization_before_external":  true
+                },
+    "verification":  {
+                         "require_declared_commands":  true,
+                         "reject_unexpected_files":  true,
+                         "require_independent_review":  true,
+                         "critical_human_review":  true,
+                         "statuses":  [
+                                          "working",
+                                          "not_working",
+                                          "not_exercised",
+                                          "not_applicable",
+                                          "not_verifiable"
+                                      ]
+                     },
+    "compatibility":  {
+                          "priority_over":  [
+                                                "gsd",
+                                                "context7",
+                                                "context7-auto-research"
+                                            ],
+                          "conflict_policy":  "model-orchestrator-gates-win; record-conflict-in-artifact"
+                      },
+    "skill_version":  "3.0.0"
+}

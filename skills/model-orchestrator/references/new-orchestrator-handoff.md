@@ -1,0 +1,3 @@
+# New orchestrator session handoff
+
+After installing this version, archive the old orchestrator agent and start a fresh Codex session in Traycer using the same project and Epic. Preserve every existing artifact. Load this skill from zero, read current project state and durable artifacts, and do not repeat completed tasks. Discard older architectural interpretations that conflict with v3.0.0. Do not claim external delegation until the new orchestrator performs a separate real child-agent test.
