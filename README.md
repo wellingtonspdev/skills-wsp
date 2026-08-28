@@ -1,6 +1,6 @@
 # ⚡ WSP Agent Skills Ecosystem
 
-[![Total Skills](https://img.shields.io/badge/Total%20Skills-1%2C467%20Skills-blueviolet?style=for-the-badge&logo=codeforces)](https://github.com/wellingtonspdev/skills-wsp)
+[![Total Skills](https://img.shields.io/badge/Total%20Skills-1%2C468%20Skills-blueviolet?style=for-the-badge&logo=codeforces)](https://github.com/wellingtonspdev/skills-wsp)
 [![Compatibilidade](https://img.shields.io/badge/Compatibilidade-Antigravity%20%7C%20Claude%20Code%20%7C%20Gemini%20CLI%20%7C%20Cursor-0052CC?style=for-the-badge&logo=google-gemini)](https://github.com/wellingtonspdev/skills-wsp)
 [![Status](https://img.shields.io/badge/Status-Ativo%20%26%20Sincronizado-success?style=for-the-badge)](https://github.com/wellingtonspdev/skills-wsp)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -9,12 +9,22 @@
 
 ---
 
+## 🆕 Nova skill em destaque
+
+### [`ai-issue-router`](skills/ai-issue-router/SKILL.md)
+
+Classifica issues, tickets, histórias e tarefas de engenharia por tipo, complexidade, risco, qualidade e verificabilidade. Gera o **AI Routing Card**, recomenda workflows `W1–W5` e modelos por papel entre Codex/GPT e Antigravity/Gemini, com hard gates para segurança, autenticação, dados e mudanças irreversíveis.
+
+> Use antes de planejar ou delegar uma issue. A classificação é read-only por padrão e só recomenda execução após validação do runtime e autorização explícita.
+
+---
+
 ## 🧭 Navegação Rápida por Categoria
 
 | Categoria | Qtd. Skills | Descrição Resumida |
 | :--- | :---: | :--- |
 | [🔍 Engenharia Reversa, Descompilação & Código Legado](#reversa) | **20** | Framework Reversa oficial, análise binária de baixo nível, engenharia reversa de protocolos, firmware e modernização de legado. |
-| [🤖 Inteligência Artificial, LLMs & Agentes Autônomos](#ai_agents) | **238** | Orquestração multi-agente, frameworks LLM (MetaGPT, LangChain, CrewAI, PydanticAI), engenharia de prompts, embeddings e RAG. |
+| [🤖 Inteligência Artificial, LLMs & Agentes Autônomos](#ai_agents) | **239** | Orquestração multi-agente, frameworks LLM (MetaGPT, LangChain, CrewAI, PydanticAI), engenharia de prompts, embeddings e RAG. |
 | [🏗️ Arquitetura de Software & Metodologias de Engenharia](#architecture) | **117** | Padrões arquiteturais C4, Domain-Driven Design (DDD), refatoração estrutural, Clean Code, auditorias técnicas e ADRs. |
 | [🎨 UI / UX Pro Max, Design Systems & Animações](#design_ui) | **122** | Sistemas de design de classe mundial, UI/UX Pro Max, diretrizes Apple HIG, animações fluidas, Tailwind CSS, Shadcn e Figma. |
 | [📱 Frontend Moderno & Desenvolvimento Mobile](#frontend_mobile) | **87** | Aplicações escaláveis com React, Next.js, SvelteKit, Vue, Angular, Expo, React Native, Flutter, Swift, SwiftUI e Makepad. |
@@ -27,7 +37,7 @@
 | [📈 Growth Hacking, Marketing, SEO & Psicologia de Conversão](#marketing_growth) | **89** | Estratégias de conversão (CRO), SEO técnico e semântico, geração de leads com Apify, copywriting psicológico e email marketing. |
 | [🔬 Ciência, Saúde, Domínios Especializados & Web3](#science_specialized) | **38** | Bibliotecas científicas (Astropy, SciPy, BioPython, Qiskit), saúde, medicina, análise jurídica, leilões, Web3 e FinTech. |
 | [🛠️ Utilitários, Ferramentas & Suporte Geral](#general_utilities) | **100** | Ferramentas auxiliares, formatadores, conversores e utilitários gerais para suporte ao desenvolvimento. |
-| **TOTAL** | **1467** | *Coleção completa de habilidades operacionais* |
+| **TOTAL** | **1468** | *Coleção completa de habilidades operacionais* |
 
 ---
 
@@ -104,7 +114,7 @@ cp -r ./skills/gsd-* .agents/skills/
 
 <a id="ai_agents"></a>
 ### 🤖 Inteligência Artificial, LLMs & Agentes Autônomos
-*Orquestração multi-agente, frameworks LLM (MetaGPT, LangChain, CrewAI, PydanticAI), engenharia de prompts, embeddings e RAG.* (238 skills)
+*Orquestração multi-agente, frameworks LLM (MetaGPT, LangChain, CrewAI, PydanticAI), engenharia de prompts, embeddings e RAG.* (239 skills)
 
 | Skill | Descrição e Propósito Operacional |
 | :--- | :--- |
@@ -136,6 +146,7 @@ cp -r ./skills/gsd-* .agents/skills/
 | [`ai-daily-radar`](skills/ai-daily-radar/SKILL.md) | Pesquisa e sintetiza diariamente notícias, papers, releases, ferramentas, repositórios e sinais de comunidade sobre IA, tecnologia e programação. Use quando o usuário pedir rada... |
 | [`ai-engineer`](skills/ai-engineer/SKILL.md) | Build production-ready LLM applications, advanced RAG systems, and intelligent agents. Implements vector search, multimodal AI, agent orchestration, and enterprise AI integrations. |
 | [`ai-engineering-toolkit`](skills/ai-engineering-toolkit/SKILL.md) | 6 production-ready AI engineering workflows: prompt evaluation (8-dimension scoring), context budget planning, RAG pipeline design, agent security audit (65-point checklist), ev... |
+| [`ai-issue-router`](skills/ai-issue-router/SKILL.md) | Classifica issues por tipo, complexidade, risco, qualidade e validação; recomenda workflow W1–W5 e modelos por papel entre Codex/GPT e Antigravity/Gemini. |
 | [`ai-md`](skills/ai-md/SKILL.md) | Convert human-written CLAUDE.md into AI-native structured-label format. Battle-tested across 4 models. Same rules, fewer tokens, higher compliance. |
 | [`ai-ml`](skills/ai-ml/SKILL.md) | AI and machine learning workflow covering LLM application development, RAG implementation, agent architecture, ML pipelines, and AI-powered features. |
 | [`ai-native-cli`](skills/ai-native-cli/SKILL.md) | Design spec with 98 rules for building CLI tools that AI agents can safely use. Covers structured JSON output, error handling, input contracts, safety guardrails, exit codes, an... |
@@ -1699,7 +1710,7 @@ Consulte rapidamente qualquer skill pelo seu identificador único:
 [A](#indice-a) [B](#indice-b) [C](#indice-c) [D](#indice-d) [E](#indice-e) [F](#indice-f) [G](#indice-g) [H](#indice-h) [I](#indice-i) [J](#indice-j) [K](#indice-k) [L](#indice-l) [M](#indice-m) [N](#indice-n) [O](#indice-o) [P](#indice-p) [Q](#indice-q) [R](#indice-r) [S](#indice-s) [T](#indice-t) [U](#indice-u) [V](#indice-v) [W](#indice-w) [X](#indice-x) [Y](#indice-y) [Z](#indice-z) [#](#indice-num)
 
 <a id="indice-a"></a>
-### Letra A (239 skills)
+### Letra A (240 skills)
 
 | Skill | Resumo da Função |
 | :--- | :--- |
@@ -1738,6 +1749,7 @@ Consulte rapidamente qualquer skill pelo seu identificador único:
 | [`ai-daily-radar`](skills/ai-daily-radar/SKILL.md) | Pesquisa e sintetiza diariamente notícias, papers, releases, ferramentas, repositórios e sinais de comunidade sobre IA, tecnologia e programação. Use quando o usuário pedir rada... |
 | [`ai-engineer`](skills/ai-engineer/SKILL.md) | Build production-ready LLM applications, advanced RAG systems, and intelligent agents. Implements vector search, multimodal AI, agent orchestration, and enterprise AI integrations. |
 | [`ai-engineering-toolkit`](skills/ai-engineering-toolkit/SKILL.md) | 6 production-ready AI engineering workflows: prompt evaluation (8-dimension scoring), context budget planning, RAG pipeline design, agent security audit (65-point checklist), ev... |
+| [`ai-issue-router`](skills/ai-issue-router/SKILL.md) | Classifica issues por tipo, complexidade, risco, qualidade e validação; recomenda workflow W1–W5 e modelos por papel entre Codex/GPT e Antigravity/Gemini. |
 | [`ai-md`](skills/ai-md/SKILL.md) | Convert human-written CLAUDE.md into AI-native structured-label format. Battle-tested across 4 models. Same rules, fewer tokens, higher compliance. |
 | [`ai-ml`](skills/ai-ml/SKILL.md) | AI and machine learning workflow covering LLM application development, RAG implementation, agent architecture, ML pipelines, and AI-powered features. |
 | [`ai-native-cli`](skills/ai-native-cli/SKILL.md) | Design spec with 98 rules for building CLI tools that AI agents can safely use. Covers structured JSON output, error handling, input contracts, safety guardrails, exit codes, an... |

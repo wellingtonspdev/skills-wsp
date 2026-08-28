@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Issue Router"
+  short_description: "Classifica issues e recomenda modelos de IA"
+  default_prompt: "Use $ai-issue-router para classificar esta issue e gerar o contrato de execução."
